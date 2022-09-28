@@ -1,9 +1,14 @@
-import * as React from 'react';
+import React from 'react';
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+  color: red;
+`;
 
 const IndexPage = () => {
   return (
     <>
-      <h1>JayCode</h1>
+      <H1>JayCode</H1>
     </>
   );
 };

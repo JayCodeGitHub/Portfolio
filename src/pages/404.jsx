@@ -3,9 +3,9 @@ import { Link } from 'gatsby';
 
 function NotFoundPage() {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
+    <main>
+      <h1>Page not found</h1>
+      <p>
         Sorry 😔, we couldn’t find what you were looking for.
         <br />
         <Link to="/">Go home</Link>.
