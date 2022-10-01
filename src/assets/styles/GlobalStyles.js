@@ -9,10 +9,6 @@ export const GlobalStyle = createGlobalStyle`
     html {
         font-size: 62.5%;
     }
-    h1 {
-        color: red;
-    }
-    
     body {
         margin: 0;
         font-size: 1.6rem;

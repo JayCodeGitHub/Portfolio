@@ -1,10 +1,10 @@
 export const theme = {
-    primary: '#F11B25',
-    secondary: '#1E1E1E',
-    tertiary: '#3b82f680',
+    primary: '#2233FF',
+    secondary: '#DE4D86',
+    tertiary: '#23232D',
     black: '#000000',
     white: '#FFFFFF',
-    grey: '#9ca3af',
+    grey: '#C4C4C4',
     font: {
       size: {
         xxxs: '.9rem',
