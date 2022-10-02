@@ -1,16 +1,13 @@
 import React from 'react';
+import Hero from '../components/Hero/Hero';
 
-const IndexPage = () => {
+function IndexPage() {
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>JayCode</h1>
+      <Hero />
     </>
   );
-};
+}
 
 export default IndexPage;
 

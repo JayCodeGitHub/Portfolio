@@ -1,13 +1,10 @@
 import React from 'react';
+import Hero from '../components/Hero/Hero';
 
 const experiencePage = () => {
   return (
     <>
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>ExperiencePage</h1>
+      <Hero secondary />
     </>
   );
 };

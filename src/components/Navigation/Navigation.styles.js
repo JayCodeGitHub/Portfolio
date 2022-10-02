@@ -111,7 +111,7 @@ export const StyledNavigation = styled.ul`
     padding: 0;
     ${({ theme }) => theme.mq.desktop} {
         flex-direction: row;
-        width: 30%;
+        width: 500px;
     }
 `
 
