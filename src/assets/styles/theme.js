@@ -21,7 +21,7 @@ export const theme = {
       },
     },
     mq: {
-      phone: '@madia (min-width: 640px)',
+      phone: '@media (max-width: 768px)',
       tablet: '@media (min-width: 768px)',
       desktop: '@media (min-width: 1024px)',
       bigDesktop: '@media (min-width: 1280px)',
