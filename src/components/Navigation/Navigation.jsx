@@ -31,15 +31,15 @@ const Navigation = () => {
         </LogoWrapper>
         <StyledNavigation>
           {NavigationItems.map((item) => (
-            <NavigationItem key={item.name}>
-              <Link
+            <li key={item.name}>
+              <NavigationItem
                 to={item.href}
                 activeClassName="active"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
-              </Link>
-            </NavigationItem>
+              </NavigationItem>
+            </li>
           ))}
         </StyledNavigation>
       </Wrapper>

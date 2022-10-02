@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'gatsby';
 
 export const OuterWrapper = styled.nav`
     height: 8rem;
@@ -91,6 +92,7 @@ export const Wrapper = styled.div`
     left: 0;
     ${({ theme }) => theme.mq.desktop} {
         position: static;
+        transform: translateY(0);
         width: 100%;
         height: 100%;
         display: flex;
@@ -109,22 +111,35 @@ export const StyledNavigation = styled.ul`
     padding: 0;
     ${({ theme }) => theme.mq.desktop} {
         flex-direction: row;
+        width: 30%;
     }
 `
 
-export const NavigationItem = styled.li`
-    padding: 0 25px;
-    a {
-        text-decoration: none;
-        color: ${({ theme }) => theme.white};
-        font-size: ${({ theme }) => theme.font.size.s};
-    }
-    .active {
+export const NavigationItem = styled(Link)`
+    color: ${({ theme }) => theme.white};
+    font-size: ${({ theme }) => theme.font.size.s};
+    text-decoration: none;
+    position: relative;
+    &.active {
         color: ${({ theme }) => theme.primary};
     }
+    &::before {
+        content: '';
+        width: 120%;
+        height: 4px;
+        border-radius: 5px;
+        background-color: ${({ theme }) => theme.primary};
+        position: absolute;
+        top: 110%;
+        left: -10%;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform 0.2s ease-in-out;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+    }
     ${({ theme }) => theme.mq.phone} {
-        a {
-            font-size: ${({ theme }) => theme.font.size.m};
-        }
+        font-size: ${({ theme }) => theme.font.size.m};
     }
 `
