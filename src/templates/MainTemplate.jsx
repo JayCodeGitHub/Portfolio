@@ -5,11 +5,11 @@ import { theme } from '../assets/styles/theme';
 import Navigation from '../components/Navigation/Navigation';
 
 export const MainTemplate = ({ children }) => (
-  <>
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
+    <>
+      <GlobalStyle />
       <Navigation />
       {children}
-    </ThemeProvider>
-  </>
+    </>
+  </ThemeProvider>
 );

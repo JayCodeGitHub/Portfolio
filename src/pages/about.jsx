@@ -1,11 +1,12 @@
 import React from 'react';
+import { MainTemplate } from '../templates/MainTemplate';
 import Hero from '../components/Hero/Hero';
 
 const aboutPage = () => {
   return (
-    <>
-      <Hero secondary />
-    </>
+    <MainTemplate>
+      <Hero secondary title="about" />
+    </MainTemplate>
   );
 };
 

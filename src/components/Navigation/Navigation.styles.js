@@ -13,7 +13,7 @@ export const OuterWrapper = styled.nav`
     justify-content: space-between;
     background-color: ${({ theme }) => theme.tertiary};
     padding: 0 5vw;
-    @media (min-width: 1280px) {
+    ${({ theme }) => theme.mq.desktop} {
         padding: 0vw 10vw;
     }
 `

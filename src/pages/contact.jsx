@@ -1,11 +1,12 @@
 import React from 'react';
+import { MainTemplate } from '../templates/MainTemplate';
 import Hero from '../components/Hero/Hero';
 
 const contactPage = () => {
   return (
-    <>
-      <Hero secondary />
-    </>
+    <MainTemplate>
+      <Hero secondary title="contact" />
+    </MainTemplate>
   );
 };
 
