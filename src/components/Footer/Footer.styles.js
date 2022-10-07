@@ -2,6 +2,56 @@ import styled from "styled-components";
 
 export const Wrapper = styled.footer`
     width: 100%;
-    height: 8rem;
-    color: red;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: ${({ theme }) => theme.tertiary};
+    border-top: solid 2px ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+    ${({ theme }) => theme.mq.desktop}  {
+        height: 8rem;
+    }
+`
+
+export const EmailWrapper = styled.div`
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: ${({ theme }) => theme.font.size.xs};
+    }
+    ${({ theme }) => theme.mq.desktop}  {
+        width: 50%;
+        height: 100%;
+        h2 {
+            font-size: ${({ theme }) => theme.font.size.s};
+        }
+    }
+`
+
+export const IconWrapper = styled.div`
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        fill: ${({ theme }) => theme.white};
+        height: 35px;
+        &:hover {
+            fill: ${({ theme }) => theme.primary};
+            transition: fill .05s ease-in-out;
+        }
+    }
+    ${({ theme }) => theme.mq.desktop}  {
+        width: 25%;
+        height: 100%;
+        svg {
+            height: 30px;
+        }
+    }
 `
