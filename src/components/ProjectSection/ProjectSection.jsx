@@ -1,11 +1,23 @@
 import React from 'react';
+import { Wrapper } from './ProjectSection.styles';
 
-const ProjectSection = () => {
+const ProjectSection = ({
+  type,
+  name,
+  href,
+  github,
+  description,
+  technologies,
+  image,
+}) => {
   return (
     <>
-      <Section>
-        <H1>Project</H1>
-      </Section>
+      <Wrapper>
+        <h1>{type}</h1>
+        <h2>{name}</h2>
+        <p>{description}</p>
+        <img src={image} />
+      </Wrapper>
     </>
   );
 };
