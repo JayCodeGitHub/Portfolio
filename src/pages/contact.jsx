@@ -11,3 +11,7 @@ const contactPage = () => {
 };
 
 export default contactPage;
+
+export function Head() {
+  return <title>Contact</title>;
+}
