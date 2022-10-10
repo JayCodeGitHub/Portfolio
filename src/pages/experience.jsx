@@ -27,3 +27,7 @@ const experiencePage = () => {
 };
 
 export default experiencePage;
+
+export function Head() {
+  return <title>Experience</title>;
+}
