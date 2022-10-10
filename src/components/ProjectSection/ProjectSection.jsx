@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper } from './ProjectSection.styles';
+import { Wrapper, ImageWrapper, ContentWrapper } from './ProjectSection.styles';
 
 const ProjectSection = ({
   type,
@@ -9,14 +9,27 @@ const ProjectSection = ({
   description,
   technologies,
   image,
+  i,
 }) => {
   return (
     <>
       <Wrapper>
-        <h1>{type}</h1>
-        <h2>{name}</h2>
-        <p>{description}</p>
-        <img src={image} />
+        <ImageWrapper order={i}>
+          <img src={image} />
+        </ImageWrapper>
+        <ContentWrapper order={i}>
+          <p>{type}</p>
+          <h3>{name}</h3>
+          <div>
+            <p>{description}</p>
+          </div>
+          <ul>
+            {technologies.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+          <div>github site</div>
+        </ContentWrapper>
       </Wrapper>
     </>
   );

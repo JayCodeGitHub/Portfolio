@@ -10,13 +10,15 @@ const experiencePage = () => {
     <MainTemplate>
       <Hero secondary title="experience" />
       <Wrapper>
-        {ProjectsItems.map((item) => (
+        {ProjectsItems.map((item, i) => (
           <ProjectSection
+            i={i}
             key={item.name}
             type={item.type}
             name={item.name}
             description={item.description}
             image={item.image}
+            technologies={item.technologies}
           />
         ))}
       </Wrapper>
