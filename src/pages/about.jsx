@@ -11,3 +11,7 @@ const aboutPage = () => {
 };
 
 export default aboutPage;
+
+export function Head() {
+  return <title>About</title>;
+}
