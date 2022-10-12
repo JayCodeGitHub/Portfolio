@@ -1,15 +1,22 @@
 import React from 'react';
-import { Wrapper, ImageWrapper, ContentWrapper } from './ProjectSection.styles';
+import {
+  Wrapper,
+  ImageWrapper,
+  ContentWrapper,
+  IconsWrapper,
+} from './ProjectSection.styles';
+import GitHubIcon from '../../assets/icons/Github.svg';
+import LinkIcon from '../../assets/icons/Link.svg';
 
 const ProjectSection = ({
+  i,
+  image,
   type,
   name,
-  href,
-  github,
   description,
   technologies,
-  image,
-  i,
+  href,
+  github,
 }) => {
   return (
     <>
@@ -28,7 +35,14 @@ const ProjectSection = ({
               <li>{item}</li>
             ))}
           </ul>
-          <div>github site</div>
+          <IconsWrapper>
+            <a target="_blank" href={github}>
+              <GitHubIcon />
+            </a>
+            <a target="_blank" href={href}>
+              <LinkIcon />
+            </a>
+          </IconsWrapper>
         </ContentWrapper>
       </Wrapper>
     </>

@@ -65,3 +65,11 @@ export const ContentWrapper = styled.div`
         text-align: ${({ order }) => (order % 2 === 0 ? 'right' : 'left')};
     }
 `
+
+export const IconsWrapper = styled.div`
+    svg {
+        height: 30px;
+        fill: ${({ theme }) => theme.white};
+        cursor: pointer;
+    }
+`
