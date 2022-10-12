@@ -4,11 +4,13 @@ import Hero from '../components/Hero/Hero';
 import { Wrapper } from '../assets/styles/pages/experience.styles';
 import ProjectSection from '../components/ProjectSection/ProjectSection';
 import { ProjectsItems } from '../assets/items/ProjectsItems/ProjectsItems';
+import ProjectsBar from '../components/ProjectsBar/ProjectsBar';
 
 const experiencePage = () => {
   return (
     <MainTemplate>
       <Hero secondary title="experience" />
+      <ProjectsBar />
       <Wrapper>
         {ProjectsItems.map((item, i) => (
           <ProjectSection
