@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: ${({secondary}) => (secondary ? 'center' : 'flex-start')};
+    border-bottom: solid 2px ${({ theme }) => theme.white};
 `
 
 export const Header = styled.header`
