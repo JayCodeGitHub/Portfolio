@@ -1,6 +1,8 @@
 import React from 'react';
 import { MainTemplate } from '../templates/MainTemplate';
 import Hero from '../components/Hero/Hero';
+import { Wrapper } from '../assets/styles/pages/homepage.styles';
+import AboutSection from '../components/AboutSection/AboutSection';
 
 function IndexPage() {
   return (
@@ -13,6 +15,9 @@ function IndexPage() {
         secondButton="Let's talk"
         secondButtonHref="/contacts"
       />
+      <Wrapper>
+        <AboutSection />
+      </Wrapper>
     </MainTemplate>
   );
 }
