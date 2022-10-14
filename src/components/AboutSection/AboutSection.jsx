@@ -1,11 +1,21 @@
 import React from 'react';
 import { Wrapper } from './AboutSection.styles';
+import { AboutSectionItems } from '../../assets/items/AboutSectionItems/AboutSectionItems';
 
 const AboutSection = () => {
   return (
-    <Wrapper>
-      <h1>About Section</h1>
-    </Wrapper>
+    <>
+      {AboutSectionItems.map(({ title, description, photo, href }, i) => (
+        <Wrapper key={i}>
+          <h1>{title}</h1>
+          <p>{description}</p>
+          <img src={photo} />
+          <a href={href}>
+            <button>See More</button>
+          </a>
+        </Wrapper>
+      ))}
+    </>
   );
 };
 
