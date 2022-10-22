@@ -7,11 +7,9 @@ import {
   IconsWrapper,
 } from './ProjectsSlider.styles';
 import { Button } from '../Button/Button.styles';
+import { ProjectsSliderItems } from '../../assets/items/ProjectsSliderItems/ProjectsSliderItems';
 import GitHubIcon from '../../assets/icons/Github.svg';
 import LinkIcon from '../../assets/icons/Link.svg';
-import ChampionAcademyImageMobile from '../../assets/images/champion-academy-mobile.png';
-import KarateTeamImageMobile from '../../assets/images/karate-team-mobile.png';
-import HappyNotesImageMobile from '../../assets/images/happy-notes-mobile.png';
 
 const ProjectsSlider = () => {
   return (
@@ -21,42 +19,20 @@ const ProjectsSlider = () => {
         <Button> See More</Button>
       </Header>
       <ProjectsWrapper>
-        <Project>
-          <img src={ChampionAcademyImageMobile} />
-          <h2>Champion Academy</h2>
-          <IconsWrapper>
-            <a target="_blank">
-              <GitHubIcon />
-            </a>
-            <a target="_blank">
-              <LinkIcon />
-            </a>
-          </IconsWrapper>
-        </Project>
-        <Project>
-          <img src={KarateTeamImageMobile} />
-          <h2>Karate Team Oborniki</h2>
-          <IconsWrapper>
-            <a target="_blank">
-              <GitHubIcon />
-            </a>
-            <a target="_blank">
-              <LinkIcon />
-            </a>
-          </IconsWrapper>
-        </Project>
-        <Project>
-          <img src={HappyNotesImageMobile} />
-          <h2>Happy Notes</h2>
-          <IconsWrapper>
-            <a target="_blank">
-              <GitHubIcon />
-            </a>
-            <a target="_blank">
-              <LinkIcon />
-            </a>
-          </IconsWrapper>
-        </Project>
+        {ProjectsSliderItems.map((item, i) => (
+          <Project>
+            <img src={item.image} />
+            <h2>{item.name}</h2>
+            <IconsWrapper>
+              <a target="_blank" href={item.github}>
+                <GitHubIcon />
+              </a>
+              <a target="_blank" href={item.href}>
+                <LinkIcon />
+              </a>
+            </IconsWrapper>
+          </Project>
+        ))}
       </ProjectsWrapper>
     </Wrapper>
   );
