@@ -23,7 +23,7 @@ const ProjectsSlider = () => {
       <ProjectsWrapper>
         <Project>
           <img src={ChampionAcademyImageMobile} />
-          <h1>Champion-Academy</h1>
+          <h2>Champion Academy</h2>
           <IconsWrapper>
             <a target="_blank">
               <GitHubIcon />
@@ -35,7 +35,7 @@ const ProjectsSlider = () => {
         </Project>
         <Project>
           <img src={KarateTeamImageMobile} />
-          <h1>Karate Team Oborniki</h1>
+          <h2>Karate Team Oborniki</h2>
           <IconsWrapper>
             <a target="_blank">
               <GitHubIcon />
@@ -47,7 +47,7 @@ const ProjectsSlider = () => {
         </Project>
         <Project>
           <img src={HappyNotesImageMobile} />
-          <h1>Karate Team Oborniki</h1>
+          <h2>Happy Notes</h2>
           <IconsWrapper>
             <a target="_blank">
               <GitHubIcon />
