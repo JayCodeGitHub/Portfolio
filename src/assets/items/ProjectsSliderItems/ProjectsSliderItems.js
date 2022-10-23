@@ -18,7 +18,7 @@ export const ProjectsSliderItems = [
     {
         name: 'Happy Notes',
         href: '',
-        github: '',
+        github: 'https://github.com/JayCodeGitHub/Happy-Notes',
         image: HappyNotesImageMobile,
     },
 ]

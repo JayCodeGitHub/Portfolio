@@ -4,6 +4,7 @@ import Hero from '../components/Hero/Hero';
 import { Wrapper } from '../assets/styles/pages/homepage.styles';
 import AboutSection from '../components/AboutSection/AboutSection';
 import ProjectsSlider from '../components/ProjectsSlider/ProjectsSlider';
+import AnimationSection from '../components/AnimationSection/AnimationSection';
 
 function IndexPage() {
   return (
@@ -19,6 +20,7 @@ function IndexPage() {
       <Wrapper>
         <AboutSection />
         <ProjectsSlider />
+        <AnimationSection />
       </Wrapper>
     </MainTemplate>
   );
