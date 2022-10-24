@@ -6,3 +6,14 @@ export const Wrapper = styled.div`
         color: red;
     }
 `
+
+export const SvgWrapper = styled.div`
+    width: 50%;
+    svg {
+        width: 100%;
+    }
+`
+
+export const DescriptionWrapper = styled.div`
+    width: 50%;
+`
