@@ -10,12 +10,12 @@ export const Wrapper = styled.div`
     h1 {
         margin: 2.5rem 0;
         width: 100%;
-        font-size: ${({ theme }) => theme.font.size.m};
+        font-size: ${({ theme }) => theme.font.size.s};
     }
     p {
         color: ${({ theme }) => theme.grey};
         width: 100%;
-        font-size: ${({ theme }) => theme.font.size.s};
+        font-size: ${({ theme }) => theme.font.size.xs};
     }
     div {
         width: 100%;
@@ -29,6 +29,12 @@ export const Wrapper = styled.div`
         div {
             width: 50%;
         }
+        h1 {
+        font-size: ${({ theme }) => theme.font.size.m};
+    }
+    p {
+        font-size: ${({ theme }) => theme.font.size.s};
+    }
    }
 `
 
