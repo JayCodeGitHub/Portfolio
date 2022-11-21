@@ -1,7 +1,12 @@
 import React from 'react';
 import { MainTemplate } from '../templates/MainTemplate';
 import Hero from '../components/Hero/Hero';
-import { Wrapper } from '../assets/styles/pages/contact.styles';
+import {
+  Wrapper,
+  ContactWrapper,
+  FormWrapper,
+  ContactItemsWrapper,
+} from '../assets/styles/pages/contact.styles';
 import Form from '../components/Form/Form';
 
 const contactPage = () => {
@@ -9,7 +14,12 @@ const contactPage = () => {
     <MainTemplate>
       <Hero secondary title="contact" />
       <Wrapper>
-        <Form />
+        <ContactWrapper>
+          <ContactItemsWrapper>tel ...</ContactItemsWrapper>
+          <FormWrapper>
+            <Form />
+          </FormWrapper>
+        </ContactWrapper>
       </Wrapper>
     </MainTemplate>
   );

@@ -19,3 +19,5 @@ export const Button = styled.button`
         margin: 0 20px;
     }
 `
+
+export default Button;

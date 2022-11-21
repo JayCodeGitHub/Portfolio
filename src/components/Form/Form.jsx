@@ -1,10 +1,23 @@
 import React from 'react';
-import { Wrapper } from './Form.styles';
+import { Wrapper, ButtonWrapper } from './Form.styles';
+import Button from '../Button/Button.styles';
 
 const Form = () => {
   return (
     <Wrapper>
-      <h1>Form</h1>
+      <form>
+        <input type="text" id="fname" placeholder="Name" />
+        <input type="text" id="email" placeholder="Email" />
+        <textarea
+          name="message"
+          cols="40"
+          rows="12"
+          placeholder="Your Message"
+        ></textarea>
+      </form>
+      <ButtonWrapper>
+        <Button>Send Message</Button>
+      </ButtonWrapper>
     </Wrapper>
   );
 };
