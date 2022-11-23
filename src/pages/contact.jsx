@@ -4,6 +4,7 @@ import Hero from '../components/Hero/Hero';
 import {
   Wrapper,
   ContactWrapper,
+  ContactItem,
   FormWrapper,
   ContactItemsWrapper,
 } from '../assets/styles/pages/contact.styles';
@@ -15,7 +16,11 @@ const contactPage = () => {
       <Hero secondary title="contact" />
       <Wrapper>
         <ContactWrapper>
-          <ContactItemsWrapper>tel ...</ContactItemsWrapper>
+          <ContactItemsWrapper>
+            <ContactItem>LinkedIn</ContactItem>
+            <ContactItem>Email</ContactItem>
+            <ContactItem>GitHub</ContactItem>
+          </ContactItemsWrapper>
           <FormWrapper>
             <Form />
           </FormWrapper>
