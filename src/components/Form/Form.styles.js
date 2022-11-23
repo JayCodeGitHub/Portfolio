@@ -10,9 +10,11 @@ export const Wrapper = styled.div`
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+
         justify-content: space-around;
         ${({ theme }) => theme.mq.desktop} {        
             height: 22vw;
+            width: 100%;
         }
         ${({ theme }) => theme.mq.bigDesktop} {        
             height: 16vw;
@@ -38,9 +40,13 @@ export const Wrapper = styled.div`
         border: 2px solid white;
         background-color: transparent;
         color: white;
+        margin: 4rem 0;
         &::placeholder {
             color: white;
             opacity: 0.5;
+        }
+        ${({ theme }) => theme.mq.desktop} {        
+            margin: 0;
         }
     }
 `
