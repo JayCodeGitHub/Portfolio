@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  OuterWrapper,
-  Wrapper,
-  StyledArrow,
-  StyledCircle,
-} from './ArrowButton.styles';
+import { OuterWrapper, Wrapper, StyledArrow } from './ArrowButton.styles';
 
 const ArrowButton = ({ children }) => {
   return (
@@ -21,7 +16,7 @@ const ArrowButton = ({ children }) => {
               cx="30"
               cy="30"
             ></circle>
-            <StyledCircle
+            <circle
               stroke="currentColor"
               stroke-width="2"
               fill="transparent"
@@ -30,7 +25,7 @@ const ArrowButton = ({ children }) => {
               cy="30"
               transform-origin="30px 30px"
               stroke-dashoffset="175.92918860102841"
-            ></StyledCircle>
+            ></circle>
           </svg>
         </div>
         <span>

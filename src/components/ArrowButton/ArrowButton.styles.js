@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const OuterWrapper = styled.a`
     display: inline-flex;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: color, fill, stroke;
+    transition: color 0.2s ease-in-out;
     font-weight: 500;
     text-align: left;
     align-items: center;
@@ -12,6 +13,9 @@ export const OuterWrapper = styled.a`
         font-size: ${({ theme }) => theme.font.size.s};
         line-height: 2.5rem;
         font-weight: 500;
+    }
+    &:hover{
+        color: ${({ theme }) => theme.grey};
     }
 `
 
@@ -30,16 +34,9 @@ export const Wrapper = styled.div`
     }
     div {
         position: absolute;
-        color: #E5E7EB;
     }
 `
 
 export const StyledArrow = styled.svg`
     transform: rotate(-90deg);
-`
-
-export const StyledCircle = styled.circle`
-    stroke-dasharray: 175.929, 175.929;
-    transform: rotate(-90deg);
-    transform-origin: 30px 30px;
 `
