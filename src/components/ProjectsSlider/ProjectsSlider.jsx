@@ -17,7 +17,7 @@ const ProjectsSlider = () => {
     <Wrapper>
       <Header>
         <h1>Some of my projects</h1>
-        <ArrowButton>See More</ArrowButton>
+        <ArrowButton to="/experience">See More</ArrowButton>
       </Header>
       <ProjectsWrapper>
         {ProjectsSliderItems.map((item, i) => (

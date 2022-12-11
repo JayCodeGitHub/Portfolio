@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import { Link } from 'gatsby';
 
-export const OuterWrapper = styled.a`
+export const OuterWrapper = styled(Link)`
     display: inline-flex;
     transition-property: color, fill, stroke;
     transition: color 0.2s ease-in-out;
     font-weight: 500;
     text-align: left;
     align-items: center;
+    text-decoration: none;
+    color: ${({ theme }) => theme.white};
     cursor: pointer;
     span {
         margin-right: 3.5rem;

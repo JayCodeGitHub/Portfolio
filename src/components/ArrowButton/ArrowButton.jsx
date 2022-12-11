@@ -1,9 +1,9 @@
 import React from 'react';
 import { OuterWrapper, Wrapper, StyledArrow } from './ArrowButton.styles';
 
-const ArrowButton = ({ children }) => {
+const ArrowButton = ({ children, to }) => {
   return (
-    <OuterWrapper>
+    <OuterWrapper to={to}>
       <span>{children}</span>
       <Wrapper>
         <div>
