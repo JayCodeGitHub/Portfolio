@@ -1,22 +1,20 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-    color: white;
     font-size: ${({ theme }) => theme.font.size.xs};
-    border: solid blue 4px;
-    background-color: transparent;
-    width:  18rem;
-    height: 5rem;
+    background-color: ${({ theme }) => theme.white};
+    border: none;
+    font-weight: 500;
     display: flex; 
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 1.2rem;
     cursor: pointer;
+    padding: 1.5rem 2.5rem;
     ${({ theme }) => theme.mq.desktop}  {
-        width:  25rem;
-        height: 8rem;
         font-size: ${({ theme }) => theme.font.size.s};
         margin: 0 20px;
+        padding: 2rem 4.5rem;
     }
 `
 
