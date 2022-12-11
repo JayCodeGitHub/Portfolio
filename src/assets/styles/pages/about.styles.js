@@ -13,33 +13,52 @@ export const StyledSection = styled.section`
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    ${({ theme }) => theme.mq.desktop} {
+        flex-direction: row;
+    }
 `
 
 export const ImageWrapper = styled.div`
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    ${({ theme }) => theme.mq.desktop} {
+        width: 50%;
+    }
 `
 
 export const StyledImage = styled.img`
-    width: 75%;
+    width: 90%;
     border-radius: 1.5rem;
+    ${({ theme }) => theme.mq.desktop} {
+        width: 75%;
+    }
 `
 
 export const DescriptionWrapper = styled.div`
-    width: 50%;
+    width: 100%;
+    ${({ theme }) => theme.mq.desktop} {
+        width: 50%;
+    }
 `
 
 export const Title = styled.h2`
-    font-size: ${({ theme }) => theme.font.size.m};
+    font-size: ${({ theme }) => theme.font.size.s};
+    ${({ theme }) => theme.mq.desktop} {
+        font-size: ${({ theme }) => theme.font.size.m};
+    }
 `
 
 export const Paragraph = styled.p`
-    font-size: ${({ theme }) => theme.font.size.s};
+    font-size: ${({ theme }) => theme.font.size.xs};
     color: ${({ theme }) => theme.grey};
     width: 90%;
     padding-left: 2rem;
+    ${({ theme }) => theme.mq.desktop} {
+        font-size: ${({ theme }) => theme.font.size.s};
+    }
 `
 
 export const StyledTechnologies = styled.ul`
