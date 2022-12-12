@@ -6,7 +6,7 @@ import { Button } from '../Button/Button.styles';
 const AboutSection = () => {
   return (
     <>
-      {AboutSectionItems.map(({ title, description, photo, href }, i) => (
+      {AboutSectionItems.map(({ title, description, image, href }, i) => (
         <Wrapper key={i}>
           <div>
             <h1>{title}</h1>
@@ -15,7 +15,7 @@ const AboutSection = () => {
               <Button>See More</Button>
             </a>
           </div>
-          <img src={photo} />
+          <img src={image} />
         </Wrapper>
       ))}
     </>
