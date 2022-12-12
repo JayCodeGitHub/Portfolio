@@ -31,8 +31,8 @@ const ProjectSection = ({
             <p>{description}</p>
           </div>
           <ul>
-            {technologies.map((item) => (
-              <li>{item}</li>
+            {technologies.map((item, i) => (
+              <li key={i}>{item}</li>
             ))}
           </ul>
           <IconsWrapper>

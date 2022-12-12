@@ -12,7 +12,7 @@ const experiencePage = () => {
       <Wrapper>
         {ProjectsItems.map((item, i) => (
           <ProjectSection
-            key={item.name}
+            key={i}
             i={i}
             image={item.image}
             type={item.type}
