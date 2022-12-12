@@ -40,17 +40,30 @@ export const ContactItemsWrapper = styled.div`
     ${({ theme }) => theme.mq.desktop} {        
         width: 50%;
         margin: 0;
+        border-right: 3px solid white;
     }
 `
 
-export const ContactItem = styled.div`
-    font-size: ${({ theme }) => theme.font.size.m};
+export const ContactItem = styled.a`
+    font-size: ${({ theme }) => theme.font.size.s};
+    text-decoration: none;
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 4rem 0;
-    border: solid 4px blue;
     border-radius: 2rem;
+    border: 2px solid ${({ theme }) => theme.theme};
     margin: 2rem 0;
+    color: ${({ theme }) => theme.white};
+    transition: color 0.1s ease-in-out;
+    ${({ theme }) => theme.mq.desktop} {        
+        font-size: ${({ theme }) => theme.font.size.m};
+    }
+    &:hover {
+        color: ${({ theme }) => theme.grey};
+    }
+    svg {
+        margin: 0 5rem;
+    }
 `
