@@ -18,6 +18,17 @@ export const OuterWrapper = styled.nav`
     }
 `
 
+export const Wrapper = styled.div`
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: ${({ theme }) => theme.tertiary};
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+`
+
 export const LogoWrapper = styled.div`
     z-index: 10;
     a {
@@ -28,88 +39,18 @@ export const LogoWrapper = styled.div`
             color: ${({ theme }) => theme.primary};
         }
     }
-    ${({ theme }) => theme.mq.phone} {
-        display: ${({ isMobile }) => (isMobile ? 'intitail' : 'none')}
-    }
-    ${({ theme }) => theme.mq.desktop} {
-        display: ${({ isMobile }) => (isMobile ? 'none' : 'intitail')}
-    }
-`
-
-export const BurgerWrapper = styled.button`
-    display: flex;
-    width: 3rem;
-    height: 3rem;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    background-color: transparent;
-    z-index: 10;
-    ${({ theme }) => theme.mq.desktop} {
-        display: none;
-    }
-`;
-
-export const StyledBurger = styled.div`
-    transition: background-color .15s .05s ease-in-out;
-    background-color: ${({ isOpen, theme }) => (isOpen ? 'transparent' : theme.white)};
-    width: 3rem;
-    height: 0.2rem;
-    border: none;
-    padding: 0;
-    &:before {
-        content: '';
-        width: 3rem;
-        height: 0.2rem;
-        background-color: white;
-        display: block;
-        transition: transform .15s .05s ease-in-out;
-        transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-1rem')}) rotate(${({ isOpen }) => (isOpen ? '45deg' : '0deg')});
-    }
-    &:after {
-        content: '';
-        width: 3rem;
-        height: 0.2rem;
-        background-color: white;
-        display: block;
-        transition: transform .15s .05s ease-in-out;
-        transform: translateY(${({ isOpen }) => (isOpen ? '-0.2rem' : '0.8rem')}) rotate(${({ isOpen }) => (isOpen ? '-45deg' : '0deg')});
-    }
-`;
-
-export const Wrapper = styled.div`
-    justify-content: center;
-    align-items: center;
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
-    background-color: ${({ theme }) => theme.tertiary};
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    ${({ theme }) => theme.mq.desktop} {
-        position: static;
-        transform: translateY(0);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 `
 
 export const StyledNavigation = styled.ul`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    height: 60%;
-    padding: 0;
+    display: none;
     ${({ theme }) => theme.mq.desktop} {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        height: 60%;
+        padding: 0;
         flex-direction: row;
         width: 500px;
     }
@@ -141,5 +82,71 @@ export const NavigationItem = styled(Link)`
     }
     ${({ theme }) => theme.mq.phone} {
         font-size: ${({ theme }) => theme.font.size.m};
+    }
+`
+
+export const HamburgerWrapper = styled.button`
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 10;
+    ${({ theme }) => theme.mq.desktop} {
+        display: none;
+    }
+`;
+
+export const Hamburger = styled.div`
+    transition: background-color .15s .05s ease-in-out;
+    background-color: ${({ isOpen, theme }) => (isOpen ? 'transparent' : theme.white)};
+    width: 3rem;
+    height: 0.2rem;
+    border: none;
+    padding: 0;
+    &:before {
+        content: '';
+        width: 3rem;
+        height: 0.2rem;
+        background-color: white;
+        display: block;
+        transition: transform .15s .05s ease-in-out;
+        transform: translateY(${({ isOpen }) => (isOpen ? '0' : '-1rem')}) rotate(${({ isOpen }) => (isOpen ? '45deg' : '0deg')});
+    }
+    &:after {
+        content: '';
+        width: 3rem;
+        height: 0.2rem;
+        background-color: white;
+        display: block;
+        transition: transform .15s .05s ease-in-out;
+        transform: translateY(${({ isOpen }) => (isOpen ? '-0.2rem' : '0.8rem')}) rotate(${({ isOpen }) => (isOpen ? '-45deg' : '0deg')});
+    }
+`;
+
+export const StyledMobileNavigation = styled.div`
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: ${({ theme }) => theme.tertiary};
+    padding: 20vh 0 0 0;
+    transition: transform 0.1s ease-in-out;
+    transform: translateY(${({ isOpen }) => (isOpen ? '0' : '+100%')});
+    ul {
+        padding: 0;
+        width: 100%;
+        height: 70%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
     }
 `

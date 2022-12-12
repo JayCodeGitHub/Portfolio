@@ -4,10 +4,11 @@ import {
   OuterWrapper,
   NavigationItem,
   LogoWrapper,
-  BurgerWrapper,
-  StyledBurger,
+  HamburgerWrapper,
+  Hamburger,
   Wrapper,
   StyledNavigation,
+  StyledMobileNavigation,
 } from './Navigation.styles';
 import { NavigationItems } from '../../assets/items/NavigationItems/NavigationItems';
 
@@ -15,16 +16,8 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <OuterWrapper>
-      <LogoWrapper isMobile onClick={() => setIsOpen(false)}>
-        <Link to="/" activeClassName="active">
-          Jay<span>Code</span>
-        </Link>
-      </LogoWrapper>
-      <BurgerWrapper onClick={() => setIsOpen(!isOpen)}>
-        <StyledBurger isOpen={isOpen} />
-      </BurgerWrapper>
-      <Wrapper isOpen={isOpen}>
-        <LogoWrapper>
+      <Wrapper>
+        <LogoWrapper onClick={() => setIsOpen(false)}>
           <Link to="/" activeClassName="active">
             Jay<span>Code</span>
           </Link>
@@ -42,7 +35,25 @@ const Navigation = () => {
             </li>
           ))}
         </StyledNavigation>
+        <HamburgerWrapper onClick={() => setIsOpen(!isOpen)}>
+          <Hamburger isOpen={isOpen} />
+        </HamburgerWrapper>
       </Wrapper>
+      <StyledMobileNavigation isOpen={isOpen}>
+        <ul>
+          {NavigationItems.map((item) => (
+            <li key={item.name}>
+              <NavigationItem
+                to={item.href}
+                activeClassName="active"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </NavigationItem>
+            </li>
+          ))}
+        </ul>
+      </StyledMobileNavigation>
     </OuterWrapper>
   );
 };
