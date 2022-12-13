@@ -29,7 +29,12 @@ export const Header = styled.header`
         width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 2rem;
+        button {
+            margin-top: 2rem;
+        }
     }
     a {
         text-decoration: none;
@@ -45,6 +50,12 @@ export const Header = styled.header`
         }
         div {
             padding-right: 20%;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            button {
+                margin-top: 0;
+            }
          }
     }
 `
