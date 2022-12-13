@@ -4,12 +4,13 @@ import { Link } from 'gatsby';
 export const OuterWrapper = styled(Link)`
     display: inline-flex;
     transition-property: color, fill, stroke;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
     font-weight: 500;
     text-align: left;
     align-items: center;
     text-decoration: none;
     color: ${({ theme }) => theme.white};
+    transform: translateX(0);
     cursor: pointer;
     span {
         margin-right: 3.5rem;
@@ -19,6 +20,7 @@ export const OuterWrapper = styled(Link)`
     }
     &:hover{
         color: ${({ theme }) => theme.grey};
+        transform: translateX(1rem);
     }
 `
 
