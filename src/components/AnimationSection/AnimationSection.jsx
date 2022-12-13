@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react';
-import { Wrapper, SvgWrapper } from './AnimationSection.styles';
-import Scene from '../../assets/icons/scene.svg';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Wrapper, SvgWrapper } from './AnimationSection.styles';
+import Scene from '../../assets/icons/scene.svg';
+import { AnimationSectionItems } from '../../assets/items/AnimationSectionItems/AnimationSectionItems';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -95,8 +96,8 @@ function AnimationSection() {
         <Scene />
       </SvgWrapper>
       <div>
-        <h1>Meet like minded people who face similar challenges</h1>
-        <p>Join the discord and get better at building software together.</p>
+        <h1>{AnimationSectionItems.title}</h1>
+        <p>{AnimationSectionItems.description}</p>
       </div>
     </Wrapper>
   );
