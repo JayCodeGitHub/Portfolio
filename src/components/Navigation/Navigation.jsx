@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'gatsby';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useHamburger } from '../../hooks/useHamburger/usehamburger';
+import { useNavigationScroll } from '../../hooks/useNavigationScroll/useNavigationScroll';
 import {
   OuterWrapper,
   NavigationItem,
@@ -15,24 +14,12 @@ import {
 } from './Navigation.styles';
 import { NavigationItems } from '../../assets/items/NavigationItems/NavigationItems';
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Navigation = () => {
   const { isOpen, toggleNavigation, setIsOpenFalse } = useHamburger();
-  const [isDown, setIsDown] = useState(false);
+  const { isDown, navigation, toggleNavigationScroll } = useNavigationScroll();
 
-  const navigation = useRef(null);
+  toggleNavigationScroll();
 
-  useEffect(() => {
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: navigation.current,
-        start: '20% top',
-        onLeave: () => setIsDown(true),
-        onEnterBack: () => setIsDown(false),
-      },
-    });
-  });
   return (
     <OuterWrapper ref={navigation} isDown={isDown}>
       <Wrapper>

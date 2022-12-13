@@ -14,7 +14,7 @@ export const OuterWrapper = styled.nav`
     background-color: ${({ isDown, theme }) => (isDown ? theme.tertiary : 'transparent')};
     border-bottom: ${({ isDown, theme }) => (isDown ? `solid ${theme.white} 2px` : 'solid transparent 2px')};
     padding: 0 5vw;
-    transition: background-color 0.3s 0s ease-in-out, border-bottom 0.3s 0s ease-in-out;
+    transition: background-color 0.2s 0s ease-in-out, border-bottom 0.2s 0s ease-in-out;
     color: ${({ theme }) => theme.white};
     ${({ theme }) => theme.mq.desktop} {
         padding: 0vw 10vw;
