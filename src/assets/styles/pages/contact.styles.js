@@ -16,7 +16,7 @@ export const ContactWrapper = styled.div`
     align-items: center;
     flex-direction: column;
     ${({ theme }) => theme.mq.desktop} {  
-        height: 50rem;
+        height: 45rem;
         flex-direction: row;
     }
 `
@@ -38,20 +38,21 @@ export const ContactItemsWrapper = styled.div`
     align-items: center;
     margin: 2rem 0;
     ${({ theme }) => theme.mq.desktop} {        
-        width: 50%;
+        width: 100%;
         margin: 0;
-        border-right: 3px solid white;
+        flex-direction: row;
+        justify-content: space-around;
     }
 `
 
 export const ContactItem = styled.a`
     font-size: ${({ theme }) => theme.font.size.s};
     text-decoration: none;
-    width: 90%;
     display: flex;
+    width: 90%;
     justify-content: flex-start;
     align-items: center;
-    padding: 4rem 0;
+    padding: 4rem 6rem;
     border-radius: 2rem;
     border: 2px solid ${({ theme }) => theme.theme};
     margin: 2rem 0;
@@ -59,11 +60,12 @@ export const ContactItem = styled.a`
     transition: color 0.1s ease-in-out;
     ${({ theme }) => theme.mq.desktop} {        
         font-size: ${({ theme }) => theme.font.size.m};
+        width: auto;
     }
     &:hover {
         color: ${({ theme }) => theme.grey};
     }
     svg {
-        margin: 0 5rem;
+        margin: 0 2rem;
     }
 `

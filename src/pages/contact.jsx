@@ -35,9 +35,6 @@ const contactPage = () => {
               GitHub
             </ContactItem>
           </ContactItemsWrapper>
-          <FormWrapper>
-            <Form />
-          </FormWrapper>
         </ContactWrapper>
       </Wrapper>
     </MainTemplate>
