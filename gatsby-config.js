@@ -14,6 +14,15 @@ module.exports = {
     },
   },
   {
+    resolve: 'gatsby-plugin-manifest',
+    options: {
+      short_name: 'JayCode Developer',
+      start_url: '/',
+      display: 'standalone',
+      icon: 'src/assets/images/Logo.png',
+    },
+  },
+  {
     resolve: 'gatsby-plugin-react-svg',
     options: {
       rule: {
