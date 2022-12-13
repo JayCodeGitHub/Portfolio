@@ -11,8 +11,11 @@ export const OuterWrapper = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: ${({ theme }) => theme.tertiary};
+    background-color: ${({ isDown, theme }) => (isDown ? theme.tertiary : 'transparent')};
+    border-bottom: ${({ isDown, theme }) => (isDown ? `solid ${theme.white} 2px` : 'solid transparent 2px')};
     padding: 0 5vw;
+    transition: background-color 0.3s 0s ease-in-out, border-bottom 0.3s 0s ease-in-out;
+    color: ${({ theme }) => theme.white};
     ${({ theme }) => theme.mq.desktop} {
         padding: 0vw 10vw;
     }
@@ -22,7 +25,6 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: ${({ theme }) => theme.tertiary};
     width: 100%;
     height: 100%;
     justify-content: space-between;
@@ -32,7 +34,7 @@ export const Wrapper = styled.div`
 export const LogoWrapper = styled.div`
     z-index: 10;
     a {
-        color: ${({ theme }) => theme.white};
+        color: inherit;
         text-decoration: none;
         font-size: ${({ theme }) => theme.font.size.s};
         span {
