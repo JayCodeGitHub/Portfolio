@@ -15,6 +15,7 @@ const experiencePage = () => {
             key={i}
             i={i}
             image={item.image}
+            alt={item.alt}
             type={item.type}
             name={item.name}
             description={item.description}
