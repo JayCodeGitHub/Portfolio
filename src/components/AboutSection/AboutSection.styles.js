@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
    }
    img {
       width: 90%;
+      aspect-ratio: 1/1;
       border-radius: 15px;
    }
    div {
@@ -47,6 +48,7 @@ export const Wrapper = styled.div`
       flex-direction: row;
       img {
          width: 30vw;
+         aspect-ratio: 1/1;
       }
     }
    ${({ theme }) => theme.mq.bigDesktop} {
