@@ -8,17 +8,20 @@ export const ProjectsSliderItems = [
         href: 'https://karate-team.pl/',
         github: 'https://github.com/JayCodeGitHub/karate-team.pl',
         image: KarateTeamImageMobile,
+        alt: 'Screenshot from Karate Team mobile website'
     },
     {
         name: 'Champion Academy',
         href: 'https://championacademy.pl/',
         github: 'https://github.com/JayCodeGitHub/Final-Champion-Academy',
         image: ChampionAcademyImageMobile,
+        alt: 'Screenshot from Champion Academy mobile website'
     },
     {
         name: 'Happy Notes',
         href: '',
         github: 'https://github.com/JayCodeGitHub/Happy-Notes',
         image: HappyNotesImageMobile,
+        alt: 'Screenshot from Happy Notes mobile website'
     },
 ]

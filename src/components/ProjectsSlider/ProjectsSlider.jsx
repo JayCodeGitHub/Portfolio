@@ -22,7 +22,7 @@ const ProjectsSlider = () => {
       <ProjectsWrapper>
         {ProjectsSliderItems.map((item, i) => (
           <Project key={i}>
-            <img src={item.image} />
+            <img src={item.image} alt={item.alt} />
             <h2>{item.name}</h2>
             <IconsWrapper>
               <a target="_blank" href={item.github}>

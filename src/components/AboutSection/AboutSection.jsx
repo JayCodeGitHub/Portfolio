@@ -14,7 +14,7 @@ const AboutSection = () => {
             <Button>{AboutSectionItems.button}</Button>
           </a>
         </div>
-        <img src={AboutSectionItems.image} />
+        <img src={AboutSectionItems.image} alt={AboutSectionItems.alt} />
       </Wrapper>
     </>
   );

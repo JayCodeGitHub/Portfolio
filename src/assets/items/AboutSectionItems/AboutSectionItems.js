@@ -5,5 +5,6 @@ export const AboutSectionItems = {
         description: `I'm also a big extreme sports enthusiast. When I'm not hanging out with my family or at the computer you can find me cruising around on my onewheel or hitting the slopes on my snowboard when it's cold.`,
         image: ProfileImage,
         href: '/about',
+        alt: 'Profile Image',
         button: 'See More'
 }
