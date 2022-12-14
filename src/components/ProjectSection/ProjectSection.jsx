@@ -27,7 +27,7 @@ const ProjectSection = ({
         </ImageWrapper>
         <ContentWrapper order={i}>
           <p>{type}</p>
-          <h3>{name}</h3>
+          <h2>{name}</h2>
           <div>
             <p>{description}</p>
           </div>

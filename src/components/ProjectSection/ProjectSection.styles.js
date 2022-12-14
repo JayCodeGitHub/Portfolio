@@ -39,7 +39,7 @@ export const ContentWrapper = styled.div`
         list-style: none;
         justify-content: ${({ order }) => (order % 2 === 0 ? 'flex-end' : 'flex-start')};
     }
-    h3 {
+    h2 {
         text-align: left;
         text-align: ${({ order }) => (order % 2 === 0 ? 'right' : 'left')};
     }
