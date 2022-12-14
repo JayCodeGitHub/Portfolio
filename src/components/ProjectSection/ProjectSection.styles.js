@@ -19,7 +19,7 @@ export const ImageWrapper = styled.div`
     top: 0;
     img {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 64/35;
         border-radius: 5px;
     }
 `
