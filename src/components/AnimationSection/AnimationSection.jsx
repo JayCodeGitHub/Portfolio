@@ -29,7 +29,7 @@ function AnimationSection() {
         duration: 1,
         scrollTrigger: {
           trigger: wrapper.current,
-          start: '20% top',
+          start: '20% 50%',
         },
       },
     );
@@ -43,7 +43,7 @@ function AnimationSection() {
         delay: 0.5,
         scrollTrigger: {
           trigger: wrapper.current,
-          start: '20% top',
+          start: '20% 50%',
         },
       },
     );
@@ -57,7 +57,7 @@ function AnimationSection() {
         delay: 1,
         scrollTrigger: {
           trigger: wrapper.current,
-          start: '20% top',
+          start: '20% 50%',
         },
       },
     );
@@ -71,7 +71,7 @@ function AnimationSection() {
         delay: 1.5,
         scrollTrigger: {
           trigger: wrapper.current,
-          start: '20% top',
+          start: '20% 50%',
         },
       },
     );
@@ -84,7 +84,7 @@ function AnimationSection() {
         delay: 2,
         scrollTrigger: {
           trigger: wrapper.current,
-          start: '20% top',
+          start: '20% 50%',
         },
       },
     );
