@@ -13,9 +13,9 @@ function IndexPage() {
         title="JayCode"
         description="Frontend Developer"
         firstButton="Download my CV"
-        firstButtonHref="/contacts"
+        firstButtonHref="/contact"
         secondButton="Let's talk"
-        secondButtonHref="/contacts"
+        secondButtonHref="/contact"
       />
       <Wrapper>
         <AboutSection />
