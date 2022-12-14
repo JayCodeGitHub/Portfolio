@@ -3,7 +3,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Wrapper, SvgWrapper } from './AnimationSection.styles';
 import Scene from '../../assets/icons/Scene.svg';
-import { AnimationSectionItems } from '../../assets/items/AnimationSectionItems/AnimationSectionItems';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,6 +89,11 @@ function AnimationSection() {
       },
     );
   });
+  const AnimationSectionItems = {
+    title: 'Meet like minded people who face similar challenges',
+    description: `Join the discord and get better at building software together.`,
+  };
+
   return (
     <Wrapper>
       <SvgWrapper ref={wrapper}>

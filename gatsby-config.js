@@ -3,7 +3,7 @@ module.exports = {
     title: 'Portfolio',
     siteUrl: 'https://www.yourdomain.tld',
   },
-  plugins: ['gatsby-plugin-styled-components', 'gatsby-plugin-mdx', 
+  plugins: ['gatsby-plugin-styled-components', 'gatsby-plugin-mdx', 'gatsby-plugin-image',  "gatsby-plugin-sharp", "gatsby-transformer-sharp",
   {
     resolve: 'gatsby-plugin-google-fonts',
     options: {
@@ -37,5 +37,13 @@ module.exports = {
       path: './src/pages/',
     },
     __key: 'pages',
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'images',
+      path: `./src/assets/images/`,
+   },
+    __key: 'images',
   }],
 };

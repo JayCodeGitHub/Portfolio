@@ -10,7 +10,9 @@ import LinkIcon from '../../assets/icons/Link.svg';
 
 const ProjectSection = ({
   i,
-  image,
+  src,
+  srcSet,
+  sizes,
   alt,
   type,
   name,
@@ -23,7 +25,7 @@ const ProjectSection = ({
     <>
       <Wrapper>
         <ImageWrapper order={i}>
-          <img src={image} alt={alt} />
+          <img src={src} srcSet={srcSet} sizes={sizes} alt={alt} />
         </ImageWrapper>
         <ContentWrapper order={i}>
           <p>{type}</p>
