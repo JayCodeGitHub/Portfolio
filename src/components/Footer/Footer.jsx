@@ -10,12 +10,20 @@ const Footer = () => {
         <h2>jakub.gryzinski@gamil.com</h2>
       </EmailWrapper>
       <IconWrapper>
-        <a target="_blank" href="https://pl.linkedin.com/">
+        <a
+          target="_blank"
+          aria-label="Link to my LinkedIn"
+          href="https://pl.linkedin.com/"
+        >
           <LinkedInIcon />
         </a>
       </IconWrapper>
       <IconWrapper>
-        <a target="_blank" href="https://github.com/JayCodeGitHub">
+        <a
+          target="_blank"
+          aria-label="Link to my GitHub"
+          href="https://github.com/JayCodeGitHub"
+        >
           <GitHubIcon />
         </a>
       </IconWrapper>

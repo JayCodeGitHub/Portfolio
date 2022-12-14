@@ -25,10 +25,10 @@ const ProjectsSlider = () => {
             <img src={item.image} alt={item.alt} />
             <h2>{item.name}</h2>
             <IconsWrapper>
-              <a target="_blank" href={item.github}>
+              <a target="_blank" aria-label="GitHub Source" href={item.github}>
                 <GitHubIcon />
               </a>
-              <a target="_blank" href={item.href}>
+              <a target="_blank" aria-label="Link to website" href={item.href}>
                 <LinkIcon />
               </a>
             </IconsWrapper>
