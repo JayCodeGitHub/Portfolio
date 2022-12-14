@@ -37,10 +37,10 @@ const ProjectSection = ({
             ))}
           </ul>
           <IconsWrapper>
-            <a target="_blank" href={github}>
+            <a target="_blank" aria-label="GitHub Source" href={github}>
               <GitHubIcon />
             </a>
-            <a target="_blank" href={href}>
+            <a target="_blank" aria-label="Link to website" href={href}>
               <LinkIcon />
             </a>
           </IconsWrapper>
