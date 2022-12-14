@@ -6,5 +6,5 @@ export const AboutSectionItems = {
         image: ProfileImage,
         href: '/about',
         alt: 'Profile Image',
-        button: 'See More'
+        button: 'See More',
 }

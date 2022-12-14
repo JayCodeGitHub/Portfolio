@@ -16,4 +16,5 @@ export const AboutSectionItems = {
          at Upstatement for a variety of clients.`],
     technologies: ['React', 'JavaScript ES6+', 'HTML 5', 'CSS', 'Tailwind CSS', 'TypeSctipt', 'Node.js', 'GraphQL', 'Webpack', 'Docker'],
     image: ProfileImage,
+    alt: 'Profile Image',
 }

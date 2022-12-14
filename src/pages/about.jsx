@@ -33,7 +33,10 @@ const aboutPage = () => {
             </StyledTechnologies>
           </DescriptionWrapper>
           <ImageWrapper>
-            <StyledImage src={AboutSectionItems.image} />
+            <StyledImage
+              src={AboutSectionItems.image}
+              alt={AboutSectionItems.alt}
+            />
           </ImageWrapper>
         </StyledSection>
       </Wrapper>
