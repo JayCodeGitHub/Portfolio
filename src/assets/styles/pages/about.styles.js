@@ -31,6 +31,7 @@ export const ImageWrapper = styled.div`
 
 export const StyledImage = styled.img`
     width: 90%;
+    aspect-ratio: 1/1;
     border-radius: 1.5rem;
     ${({ theme }) => theme.mq.desktop} {
         width: 75%;
